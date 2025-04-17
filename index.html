@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kotak Curhat Ayy~ Boiii</title>
+  <style>
+    body {
+      background-color: #fff5f5;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #3c0d0d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: maroon;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background-color: maroon;
+      padding: 25px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #ffdddd;
+      color: maroon;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ffe5e5;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Curhat Dulu Ayy~ Boiii!</h1>
+  <div class="emoji">📝💌✨</div>
+  <p>Kamu lagi galau? Atau pengen cerita aja? Tulis di bawah yaa~</p>
+
+  <form action="https://formspree.io/f/mjkyqbqe" method="POST">
+    <input type="hidden" name="_autoresponse" value="nanti aku bales di imess boiiii">
+    
+    <label for="name">Nama kamu, ayy~</label>
+    <input type="text" id="name" name="name" placeholder="Nama kamu boiii" required>
+
+    <label for="message">Isi curhatanmu, jangan malu-malu~</label>
+    <textarea id="message" name="message" placeholder="Tulis di sini boiii..." required></textarea>
+
+    <button type="submit">Kirim ke abang curhat 📩</button>
+  </form>
+</body>
+</html>
